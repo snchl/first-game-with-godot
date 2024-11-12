@@ -35,7 +35,7 @@ grow_vertical = 2
 theme_override_constants/line_spacing = -50
 theme_override_fonts/font = ExtResource("1_osg6q")
 theme_override_font_sizes/font_size = 50
-text = "Dodge the enemies!"
+text = "DODGE THE ENEMIES!"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
@@ -63,3 +63,4 @@ wait_time = 2.0
 one_shot = true
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="timeout" from="MessageTimer" to="." method="_on_message_timer_timeout"]
